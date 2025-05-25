@@ -16,10 +16,10 @@ app.post('/send-email', async (req, res) => {
 
   try {
     const data = await resend.emails.send({
-      from: 'Your Name <your@yourdomain.com>',
-      to,
-      subject,
-      html,
+  	from: 'GMHSS <onboarding@resend.dev>',  	
+	to,
+  	subject,
+  	html,
     });
 
     res.status(200).json({ success: true, data });
